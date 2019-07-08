@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'antd';
-import { login} from '@/api/app'
+import { login } from '@/api/app'
 
 function fetchNext(params) {
   console.log('xxxx');
