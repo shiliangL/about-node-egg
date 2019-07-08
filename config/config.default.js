@@ -13,24 +13,10 @@ module.exports = appInfo => {
   const config = exports = {};
 
   // use for cookie sign key, should change to your own and keep security
-  config.keys = appInfo.name + '_shiliangl-key';
-
-  // post csrf 跨站请求伪造 安全防攻击
-  config.security = {
-    csrf: { enable: false },
-  };
+  config.keys = appInfo.name + '_1562544799600_7028';
 
   // add your middleware config here
-  config.middleware = [ 'errorHandler' ];
-
-  config.errorHandler = {
-    match: '/api',
-  };
-
-  config.validate = {
-    convert: true,
-    widelyUndefined: true,
-  };
+  config.middleware = [];
 
   // add your user config here
   const userConfig = {
