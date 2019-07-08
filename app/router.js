@@ -11,6 +11,9 @@ module.exports = app => {
 
   // 版本控制
   routerV1.get('/', controller.home.index1);
+
+  routerV1.post('/login', controller.app.login);
+
   routerV2.get('/', controller.home.index2);
 
   router.get('/', controller.home.index);
