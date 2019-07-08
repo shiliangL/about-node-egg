@@ -10,6 +10,7 @@
 - config/plugin配置暴露
 
 
+> 使用 sequelize-cli初始化、管理mysql数据库、.sequelizerc配置文件
 
 ---
 
