@@ -1,4 +1,6 @@
 'use strict';
+// 模型建立将数据库映射成js对象
+
 module.exports = app => {
   const { STRING, INTEGER, DATE, NOW } = app.Sequelize;
   const User = app.model.define('users', {
@@ -15,12 +17,11 @@ module.exports = app => {
     mobile: STRING(32),
     prefix: STRING(32),
     abstract: { type: STRING(255), allowNull: true },
-    sex: { type: INTEGER, defaultValue: 0 },
+    sex: { type: INTEGER, defaultValue: 1 },
     created_at: { type: DATE, defaultValue: NOW },
     updated_at: { type: DATE, defaultValue: NOW },
   }, {
     freezeTableName: true,
   });
-
   return User;
 };

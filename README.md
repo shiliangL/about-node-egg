@@ -12,6 +12,24 @@
 
 > 使用 sequelize-cli初始化、管理mysql数据库、.sequelizerc配置文件
 
+- npx sequelize init 初始化
+- npx sequelize db:create 创建数据库
+- npx sequelize migration:create --name create-users 创建数据库表迁移文件
+- npx sequelize db:migrate 执行初始化创建表
+
+
+> 数据库Client does not support authentication protocol requested by server的解决
+
+- mysql -uroot -p 密码登录
+- mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER;  修改加密方式
+- mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123'; 更改密码为新密码
+- mysql> FLUSH PRIVILEGES;  刷新
+
+
+#### 注册业务
+
+
+
 ---
 
 ## QuickStart

@@ -8,3 +8,4 @@ module.exports = {
   'seeders-path': path.join(__dirname, 'database/seeders'),
   'models-path': path.join(__dirname, 'app/model')
 };
+ 
