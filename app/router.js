@@ -12,7 +12,9 @@ module.exports = app => {
   // 版本控制
   routerV1.get('/', controller.home.index1);
 
-  routerV1.post('/login', controller.app.login);
+  // user
+  routerV1.post('/register', controller.user.register);
+  routerV1.post('/login', controller.user.login);
 
   routerV2.get('/', controller.home.index2);
 

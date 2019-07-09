@@ -1,5 +1,5 @@
 'use strict';
-// 模型建立将数据库映射成js对象
+// 模型建立将数据库映射成js对象类
 
 module.exports = app => {
   const { STRING, INTEGER, DATE, NOW } = app.Sequelize;
