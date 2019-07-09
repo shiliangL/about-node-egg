@@ -9,9 +9,9 @@ export function login() {
   })
 }
 
-export function registere() {
+export function register() {
   return request({
-    url: prefix+ 'registe',
+    url: prefix + 'register',
     method: 'post'
   })
 }
