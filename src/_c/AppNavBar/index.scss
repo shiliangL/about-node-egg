@@ -1,13 +1,19 @@
 @import '@/styles/mixin.scss';
 
-:local(.page-header) {
-    position: fixed;
-    top: 0;
+.page-header {
+    // position: fixed;
+    // top: 0;
     width: 100%;
     z-index: 2;
-    background-color: #fff;
+    background-color: #91ace2;
     border-bottom: 1px solid rgba(0, 0, 0, .0975);
     transition: height .2s ease-in-out;
+
+    .line {
+        height: 2.5rem;
+        background: #cccccc;
+    }
+
 
     .header {
         box-sizing: border-box;

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, Dropdown } from 'antd';
-
-import Style from './index.scss';
+import styleCss from './index.scss';
 
 class AppNavBar extends React.Component {
   constructor(props) {
@@ -21,7 +20,11 @@ class AppNavBar extends React.Component {
       </Menu>
     )
     return (
-      <nav className={Style['page-header']}>
+      <nav className={styleCss['page-header']}>
+
+        <div className={styleCss.line}> </div>
+
+
         <div ref="header" className={`header`}>
           <div className="logo-space">
             {
